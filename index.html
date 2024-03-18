@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html><head>
+    
+</head>
+<meta charset="utf-8">
+<script src = "./p5/p5.js"></script>
+<script src = "./p5/addons/p5.sound.js"></script>
+<script src="./externalLibraries/p5.clickable.js"></script>
+<style>
+
+    body {
+        margin: 0;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+</style>
+<body>
+    <script>
+    let playBtn, optionsBtn, creditsBtn;
+    function preload(){
+        soundFormats('mp3', 'ogg'); 
+        mainMusic = loadSound('data/music/startScreenMusic');
+        bgd = loadImage("data/startScreen/background.png")
+        playImg = loadImage("data/startScreen/playBtn.png")
+        optionsImg = loadImage("data/startScreen/optionsBtn.png")
+        creditsImg = loadImage("data/startScreen/creditsBtn.png")
+        blink = loadSound('data/music/blink');
+    }
+    function setup(){
+        createCanvas(windowWidth, windowHeight);
+        playBtn = new Clickable(); // Crea il pulsante
+        playBtn.locate(windowWidth/2-250, windowHeight/2 - 130); // Imposta la posizione
+        playBtn.resize(500, 120); // Imposta le dimensioni
+        playBtn.image = playImg;
+        playBtn.text = ""
+        playBtn.onPress = function() {
+            blink.play();
+            window.location.href = "./game.html"
+        };
+
+        optionsBtn = new Clickable(); // Crea il pulsante
+        optionsBtn.locate(windowWidth/2-250, windowHeight/2 ); // Imposta la posizione
+        optionsBtn.resize(500, 120); // Imposta le dimensioni
+        optionsBtn.image = optionsImg;
+        optionsBtn.text = ""
+        optionsBtn.onPress = function() {
+            blink.play();
+            window.location.href = "./options.html"
+        };
+
+        creditsBtn = new Clickable(); // Crea il pulsante
+        creditsBtn.locate(windowWidth/2-250, windowHeight/2 + 130); // Imposta la posizione
+        creditsBtn.resize(500, 120); // Imposta le dimensioni
+        creditsBtn.image = creditsImg;
+        creditsBtn.text = ""
+        creditsBtn.onPress = function() {
+            blink.play();
+            window.location.href = "https://github.com/ITISlucaT/SereneLife"
+        };
+
+        bgd.resize(width, height)
+        mainMusic.loop()
+    }
+    function draw(){
+        image(bgd, 0, 0);
+        playBtn.draw();
+        optionsBtn.draw();
+        creditsBtn.draw();
+    }
+    </script>
+</html>

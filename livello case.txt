@@ -1,0 +1,7 @@
+livello case:
+1 - casa base (in risorse)
+2 - casa con ali
+3 - dependances sinistra
+4 - dependances centrale
+5 - dependances destra
+6 - casa sul lago

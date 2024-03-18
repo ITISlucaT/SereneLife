@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head>
+    
+</head>
+<meta charset="utf-8">
+<script src = "./p5/p5.js"></script>
+<script src = "./p5/addons/p5.sound.js"></script>
+<script src="./externalLibraries/p5.clickable.js"></script>
+<style>
+
+    body {
+        margin: 0;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+</style>
+<body>
+    <script>
+    let returnBtn;
+    function preload(){
+        options = loadImage("data/startScreen/howToPlay.png")
+        returnImg = loadImage("data/startScreen/return.png")
+    }
+    function setup(){
+        createCanvas(windowWidth, windowHeight);
+        options.resize(width, height)
+
+        returnBtn = new Clickable(); // Crea il pulsante
+        returnBtn.locate(10, 20); // Imposta la posizione
+        returnBtn.resize(50, 50); // Imposta le dimensioni
+        returnBtn.image = returnImg;
+        returnBtn.text = ""
+        returnBtn.onPress = function() {
+            window.location.href = "./index.html"
+        };
+    }
+    function draw(){
+        image(options, 0, 0);
+        returnBtn.draw();
+
+    }
+    </script>
+</html>
