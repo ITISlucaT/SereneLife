@@ -39,6 +39,11 @@ I appreciate your interest in contributing to Serene Life! Here's how you can he
 2. **Feature Requests**: If you have an idea for a new feature, feel free to open an issue on GitHub. Describe your idea and how you think it could improve the game.
 3. **Pull Requests**: If you are able to fix a bug or implement a new feature, please submit a pull request. Make sure your code follows the project's code guidelines.
 
+### Contributors
+
+This project exists thanks to all the people who contribute. 
+<a href="https://github.com/RichardLitt/standard-readme/graphs/contributors"><img src="[https://opencollective.com/standard-readme/contributors.svg?width=890&button=false](https://avatars.githubusercontent.com/u/145036362?s=400&v=4)" /></a>
+
 ## LICENSE
 
 Serene Life is released under the MIT license. For full details, please see the LICENSE file in the project root.
