@@ -42,4 +42,4 @@ I appreciate your interest in contributing to Serene Life! Here's how you can he
 ## LICENSE
 
 Serene Life is released under the MIT license. For full details, please see the LICENSE file in the project root.
-This project is a demo created for educational purposes.
+*This project is a demo created for educational purposes.*
