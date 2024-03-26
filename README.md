@@ -42,7 +42,7 @@ I appreciate your interest in contributing to Serene Life! Here's how you can he
 ### Contributors
 
 This project exists thanks to all the people who contribute. 
-<a href="https://github.com/RichardLitt/standard-readme/graphs/contributors"><img src="[https://opencollective.com/standard-readme/contributors.svg?width=890&button=false](https://avatars.githubusercontent.com/u/145036362?s=400&v=4)" /></a>
+<a href="https://github.com/ITISlucaT/SereneLife/graphs/contributors">
 
 ## LICENSE
 
